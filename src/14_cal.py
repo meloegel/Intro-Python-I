@@ -32,8 +32,6 @@ import calendar
 from datetime import datetime
 
 args = len(sys.argv)
-cal = calendar.TextCalendar()
-cal.prmonth(year, month)
 
 if args == 1:
   month = datetime.now().month
@@ -49,5 +47,7 @@ else:
   sys.exit(1)
 
 
+cal = calendar.TextCalendar()
+cal.prmonth(year, month)
 
 

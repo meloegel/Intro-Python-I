@@ -48,5 +48,5 @@ x = input("Enter comma-separated numbers: ").split(',')
 #         y.append(int(i))
 # print(y)
 
-y=[int(i) for i in x if int(i) % 2 == 0]
+y=[i for i in x if int(i) % 2 == 0]
 print(y)
